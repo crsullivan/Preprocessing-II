@@ -173,13 +173,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .container1 {
-    background: red;
-  }
-}
 nav {
   display: flex;
+  justify-content: center;
   padding-top: 1%;
   padding-bottom: 1%;
   width: 100%;
@@ -192,13 +188,7 @@ nav a {
   font-size: 1.5rem;
 }
 nav h1 {
-  padding-right: 20%;
-  margin-left: 26%;
-}
-@media (max-width: 500px) {
-  nav h1 {
-    background: red;
-  }
+  padding-right: 13%;
 }
 .footer {
   width: 100%;
@@ -274,7 +264,54 @@ nav h1 {
   width: 85%;
 }
 @media (max-width: 500px) {
-  .home html {
-    background-color: red;
+  nav {
+    display: inline;
+    text-align: center;
+  }
+  nav a {
+    margin: 5%;
+  }
+  header {
+    margin: 0 5%;
+  }
+  header p {
+    border-bottom: 1px dashed lightgrey;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+  .home .content-section h2 {
+    width: 350px;
+  }
+  .home .content-section p {
+    width: 320px;
+  }
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-pick h4 {
+    width: 300px;
+    margin: 30%;
+  }
+  .home .content-pick p {
+    width: 300px;
+    margin: 30%;
+  }
+  .home .content-pick .btn {
+    width: 300px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin: 0 30%;
   }
 }

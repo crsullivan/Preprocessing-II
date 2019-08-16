@@ -80,12 +80,70 @@
   }
 
 
- @media @mobile {
-   html{
-     background-color:red;
-   }
- }
+ 
 
 
 
 }// home
+
+@media @mobile {
+
+ 
+  nav{
+  display:inline;
+  text-align:center;
+  a{
+    margin:5%;
+  }
+}
+header{
+  margin:0 5%;
+  p{
+    border-bottom:1px dashed lightgrey;
+  }
+}
+.home{
+  display: flex;
+  flex-direction:column;
+  .content-section{
+    display:flex;
+    flex-direction:column;
+    margin:5%;
+    h2{
+      width:350px;
+    }
+    p{
+      width:320px;
+    }
+}
+.inverse-content{
+      display:flex;
+      flex-direction:column-reverse;
+    }
+
+
+.content-pick{
+  display:flex;
+  flex-direction:column;
+  
+  
+  h4{
+    width:300px;
+    margin:30%;
+  }
+  p{
+    width:300px;
+    margin:30%;
+    
+  }
+  .btn{
+    width:300px;
+    padding-top:8%;
+    padding-bottom:8%;
+    margin:0 30%;
+
+  }
+}
+
+}
+}
